@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Maintenance Log List</title>
+</head>
+<body>
+    <h1>Maintenance Log List</h1>
+    <ul>
+        {% for log in maintenance_logs %}
+            <li>{{ log.vehicle }} - {{ log.formatted_date }} - {{ log.description }} - Cost: ${{ log.cost }}</li>
+        {% endfor %}
+    </ul>
+</body>
+</html>

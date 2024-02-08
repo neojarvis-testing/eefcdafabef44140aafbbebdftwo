@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Maintenance Log Detail</title>
+</head>
+<body>
+    <h1>Maintenance Log Detail</h1>
+    <p>Vehicle: {{ maintenance_log.vehicle }}</p>
+    <p>Date: {{ maintenance_log.formatted_date }}</p>
+    <p>Description: {{ maintenance_log.description }}</p>
+    <p>Cost: ${{ maintenance_log.cost }}</p>
+    {% if maintenance_log.receipt %}
+        <img src="{{ maintenance_log.receipt.url }}" alt="Maintenance Receipt">
+    {% endif %}
+</body>
+</html>

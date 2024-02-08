@@ -1,0 +1,23 @@
+[
+    {
+      "model": "app_i.vehicle",
+      "pk": 1,
+      "fields": {"make": "Toyota", "model": "Camry", "year": 2022}
+    },
+    {
+      "model": "app_i.vehicle",
+      "pk": 2,
+      "fields": {"make": "Ford", "model": "Mustang", "year": 2023}
+    },
+    {
+      "model": "app_i.maintenancelog",
+      "pk": 1,
+      "fields": {"vehicle": 1, "date": "2023-01-15", "description": "Oil Change", "cost": 100.00}
+    },
+    {
+      "model": "app_i.maintenancelog",
+      "pk": 2,
+      "fields": {"vehicle": 2, "date": "2023-02-20", "description": "Brake Inspection", "cost": 150.00}
+    }
+  ]
+  
